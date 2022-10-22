@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "740094299499",
+    "project_id": "chattingtoy",
+    "storage_bucket": "chattingtoy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740094299499:android:0dd0666be908aea9a7d02e",
+        "android_client_info": {
+          "package_name": "com.example.chatting_toy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740094299499-it9d0tr3v93kicj1himtgivh5r9o70ff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-3WTrgCidYHO7waSz227V3AdAaA6XwUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740094299499-it9d0tr3v93kicj1himtgivh5r9o70ff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
