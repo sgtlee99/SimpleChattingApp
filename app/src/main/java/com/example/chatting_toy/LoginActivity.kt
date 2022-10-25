@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
                         startActivity(intent)
 
                     } else {
-                        Log.d(TAG , "fail")
+                        Log.e(TAG , "Fail")
                     }
                 }
         }

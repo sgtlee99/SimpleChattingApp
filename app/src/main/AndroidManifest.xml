@@ -10,6 +10,9 @@
 			android:supportsRtl="true"
 			android:theme="@style/Theme.CHATTING_TOY">
 		<activity
+				android:name=".MyRoomActivity"
+				android:exported="true"/>
+		<activity
 				android:name=".ChatRoomActivity"
 				android:exported="true"/>
 		<activity

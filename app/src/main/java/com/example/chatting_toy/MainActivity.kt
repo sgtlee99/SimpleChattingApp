@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                                 Log.d(TAG,"DB Success")
                             }
                             .addOnFailureListener {
-                                Log.d(TAG,"DB Fail")
+                                Log.e(TAG,"DB Fail")
                             }
 
                         val intent = Intent(this, ChatListActivity::class.java)

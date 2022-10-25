@@ -20,6 +20,11 @@ class ChatListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat_list)
 
+        myChatList.setOnClickListener {
+            val intent = Intent(this, MyRoomActivity::class.java)
+            startActivity(intent)
+        }
+
         val adapter = GroupAdapter<GroupieViewHolder>()
 
         val db = Firebase.firestore
@@ -28,7 +33,7 @@ class ChatListActivity : AppCompatActivity() {
             .get()
             .addOnSuccessListener { result ->
                 for (document in result) {
-                    adapter.add(UserItem(document.get("username").toString()))
+                    adapter.add(UserItem(document.get("username").toString(), document.get("uid").toString()))
                     Log.d(TAG, "${document.id} => ${document.data}")
                 }
                 recyclerview_list.adapter = adapter
@@ -41,10 +46,17 @@ class ChatListActivity : AppCompatActivity() {
         adapter.setOnItemClickListener { item, view ->
 
             Log.d(TAG, (item as UserItem).name)
+            Log.d(TAG, (item as UserItem).uid)
+
+            val uid : String = (item as UserItem).uid
+            val name : String = (item as UserItem).name
 
             val intent = Intent(this, ChatRoomActivity::class.java)
-//            intent.putExtra()
+            intent.putExtra("yourUid", uid)
+            intent.putExtra("name", name)
             startActivity(intent)
         }
+
+
     }
 }

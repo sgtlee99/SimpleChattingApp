@@ -49,6 +49,7 @@
 			app:layout_constraintHorizontal_bias="0.497"
 			android:id="@+id/password_area"
 			/>
+
 	<Button
 			android:text="join_button"
 			android:layout_width="150dp"
@@ -60,6 +61,7 @@
 			android:backgroundTint="@color/bright_red"
 			android:id="@+id/join_button"
 			/>
+
 	<Button
 			android:text="login_button"
 			android:layout_width="150dp"

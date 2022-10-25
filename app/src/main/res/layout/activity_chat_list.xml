@@ -21,11 +21,12 @@
 			android:text="myChatList"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:id="@+id/myChatList"
 			app:layout_constraintTop_toTopOf="parent"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintStart_toStartOf="parent"
 			android:layout_marginTop="24dp"
 			android:backgroundTint="@color/bright_red"
-			app:layout_constraintHorizontal_bias="0.892"/>
+			app:layout_constraintHorizontal_bias="0.892"
+			android:id="@+id/myChatList"
+			/>
 </androidx.constraintlayout.widget.ConstraintLayout>

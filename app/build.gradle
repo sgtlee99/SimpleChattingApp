@@ -53,5 +53,10 @@ dependencies {
     //리사이클러뷰를 간단히 말들어주는 그룹피
     implementation "com.xwray:groupie:2.7.0"
 
+    //리얼타임 데이터베이스?
+//    implementation 'com.google.firebase:firebase-database-ktx:20.0.6'
+    implementation 'com.google.firebase:firebase-database-ktx'
+
+
 //    implementaion 'com.android.support:multidex:1.0.3'
 }
