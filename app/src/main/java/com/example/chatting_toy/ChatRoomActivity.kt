@@ -137,7 +137,6 @@ class ChatRoomActivity : AppCompatActivity() {
 
             send_text.setText("")   //보내고나면 텍스트필드에 있는 문자열을 초기화
 
-
         }
     }
 }
