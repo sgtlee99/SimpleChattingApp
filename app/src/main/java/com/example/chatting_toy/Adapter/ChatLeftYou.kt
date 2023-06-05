@@ -10,6 +10,7 @@ class ChatLeftYou(val msg : String) : Item<GroupieViewHolder>() {
         return R.layout.chat_left_you
     }
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
-        viewHolder.itemView.left_chat.text = msg
+        viewHolder.itemView.left_out.text = msg
+        viewHolder.itemView.left_chat.text = "상대";
     }
 }

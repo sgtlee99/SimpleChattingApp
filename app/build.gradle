@@ -54,9 +54,7 @@ dependencies {
     implementation "com.xwray:groupie:2.7.0"
 
     //리얼타임 데이터베이스?
-//    implementation 'com.google.firebase:firebase-database-ktx:20.0.6'
     implementation 'com.google.firebase:firebase-database-ktx'
 
 
-//    implementaion 'com.android.support:multidex:1.0.3'
 }

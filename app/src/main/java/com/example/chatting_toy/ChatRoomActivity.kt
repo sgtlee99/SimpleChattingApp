@@ -36,6 +36,8 @@ class ChatRoomActivity : AppCompatActivity() {
         val yourUid: String? = intent.getStringExtra("yourUid")
         val name: String? = intent.getStringExtra("name")
 
+        chattingroom_name.text = name.toString();
+
         val adapter = GroupAdapter<GroupieViewHolder>()
 
         val db: FirebaseFirestore = FirebaseFirestore.getInstance()
@@ -63,8 +65,6 @@ class ChatRoomActivity : AppCompatActivity() {
 //            .addOnFailureListener {
 //
 //            }
-
-
         val database = Firebase.database("https://chattingtoy-default-rtdb.asia-southeast1.firebasedatabase.app/")
         val myRef = database.getReference("message")
         val readRef = database.getReference("message").child(myUid.toString()).child(yourUid.toString())
@@ -89,7 +89,6 @@ class ChatRoomActivity : AppCompatActivity() {
 //        }
         val childEventListener = object : ChildEventListener {
             override fun onChildAdded(p0: DataSnapshot, p1: String?) {
-//                Log.d(TAG, "add : $p0")
                 val model = p0.getValue(ChatNewModel::class.java)
                 val msg = model?.message.toString()
                 val who = model?.who

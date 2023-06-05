@@ -1,35 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-		xmlns:android="http://schemas.android.com/apk/res/android"
-		android:layout_width="match_parent"
-		android:background="@drawable/round"
-		android:layout_marginLeft="50dp"
-		android:layout_height="65dp"
-		android:layout_marginTop="10dp"
-		android:layout_marginRight="10dp">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_marginStart="35dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/img_bubble_right">
 
-	<TextView
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="20dp"
-			android:gravity="right"
-			android:layout_marginRight="100dp"
-			android:text="chat_content"
-			android:id="@+id/right_msg"
-			>
-	</TextView>
+    <TextView
+        android:id="@+id/right_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/right_me"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:text="asdfasdfasdfasdf"/>
 
-	<TextView
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:gravity="right"
-			android:text="나"
-			android:textStyle="bold"
-			android:layout_marginTop="20dp"
-			android:layout_marginStart="20dp"
-			android:layout_marginBottom="20dp"
-			android:layout_marginRight="20dp"
-			android:id="@+id/right_me">
-	</TextView>
+    <TextView
+        android:id="@+id/right_me"
+        android:layout_marginStart="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentEnd="true"
+        android:text="나"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
 
 </RelativeLayout>
